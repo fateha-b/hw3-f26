@@ -129,10 +129,11 @@ nav a:focus {
     margin-left: -20px;
 }
 
+
 /* Add your media query here */
 
 @media screen and (min-width: 825px) {
-    
+
     /* Step 10: Write the selector/rule property to style the nav element */
     nav {
         text-align: right;
@@ -144,8 +145,7 @@ nav a:focus {
         grid-template-columns: repeat(7, 1fr);
     }
 
-}
-  /* Steps 12 - 15: Update the grid-column property of the grid's children (where-needed)*/
+    /* Steps 12 - 15: Update the grid-column property of the grid's children (where-needed) */
     .accounts,
     .security,
     .contact {
@@ -168,9 +168,10 @@ nav a:focus {
         grid-column: 3 / span 5;
     }
 
- /* Step 16:Write the selector/rule property to update the .text-block class */
+    /* Step 16: Write the selector/rule property to update the .text-block class */
+    .text-block {
+        max-height: 235px;
+        overflow: auto;
+    }
 
-.text-block {
-    max-height: 235px;
-    overflow: auto;
 }
